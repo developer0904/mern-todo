@@ -4,10 +4,17 @@ import Header from './components/Header'; // Adjust path if needed
 import Login from './components/Login';   // Adjust path if needed
 import Register from './components/Register'; // Adjust path if needed
 import Home from './components/Home';
+import { useState, createContext } from 'react';
+
+const AppContext = createContext();
 
 // This is the main application component that orchestrates the layout and routing.
 function App() {
+
+
+    const [user, setUser] = useState({});
   return (
+    
     <Router>
       {/* The main container for the entire app. 
           Using flexbox to ensure content below the header fills the screen. */}

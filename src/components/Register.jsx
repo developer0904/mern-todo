@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // Assuming you have react-router-dom installed
 // If not, run: npm install react-router-dom
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 // --- SVG Icons ---
 // Using inline SVGs for icons to keep the component self-contained.
